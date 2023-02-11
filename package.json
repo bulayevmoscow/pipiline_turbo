@@ -2,10 +2,11 @@
   "name": "mmonorepo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "project:build": "turbo build --no-daemon",
-    "project:dev": "turbo dev"
+    "project:dev": "npm run project:build_library && turbo dev --no-daemon",
+    "project:build_library": "turbo run build --filter=frontend^...",
+    "rm": "rm -rf node_modules && rm -rf packages/*/node_modules && rm -rf packages/*/.turbo && rm -rf packages/*/dist"
   },
   "keywords": [],
   "author": "",

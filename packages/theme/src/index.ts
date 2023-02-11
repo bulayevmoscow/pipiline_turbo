@@ -1,2 +1,3 @@
+export {SomeComponent} from "./component";
 export {MyThemeProvider} from './ThemeProvider'
-export {theme} from './theme'
+export {themeObj} from './themeObj'

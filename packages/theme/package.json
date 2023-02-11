@@ -1,21 +1,25 @@
 {
-  "name": "theme",
+  "name": "@lib/theme",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "dev": "tsup --watch"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
-  "peerDependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "@emotion/react": "^11.10.5"
-  },
   "dependencies": {
     "typescript": "^4.9.5"
+  },
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.mjs"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5"
   },
   "devDependencies": {
     "@types/node": "^18.13.0",

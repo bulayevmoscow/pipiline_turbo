@@ -1,8 +1,11 @@
 import {ThemeProvider} from "@emotion/react";
-import {theme} from './theme'
-import React, {FC, PropsWithChildren} from "react";
+import {themeObj} from './themeObj'
+import {FC, PropsWithChildren} from "react";
+
+
+
 
 
 export const MyThemeProvider: FC<PropsWithChildren> = ({children}) => {
-    return <ThemeProvider theme={theme}>{children}</ThemeProvider>
+    return <ThemeProvider theme={themeObj}>{children}</ThemeProvider>
 }

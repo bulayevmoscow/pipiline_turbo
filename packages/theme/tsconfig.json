@@ -1,12 +1,16 @@
 {
   "compilerOptions": {
-    "jsx": "react",
-    "skipDefaultLibCheck": true,
-    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "target": "esnext",
+    "module": "esnext",
+    "declaration": true,
+    "declarationDir": "dist",
+    "outDir": "./dist",
+    "strict": true,
+    "moduleResolution": "node",
     "esModuleInterop": true,
-    "moduleResolution": "Node"
-  },
-  "exclude": [
-    "node_modules", "../../node_modules"
-  ]
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
 }
