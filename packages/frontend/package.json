@@ -5,19 +5,27 @@
   "scripts": {
     "dev": "vite --port 3000",
     "build": "tsc && vite build",
-    "preview": "vite preview --port 3000"
+    "preview": "vite preview --port 3000",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@lib/library": "*",
+    "@lib/theme": "*",
+    "@testing-library/react": "^13.4.0",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react-swc": "^3.0.0",
+    "@vitest/coverage-c8": "^0.28.4",
+    "jsdom": "^21.1.0",
     "typescript": "^4.9.3",
     "vite": "^4.1.0",
-    "@lib/theme": "*",
-    "@lib/library": "*"
+    "vite-tsconfig-paths": "^4.0.5",
+    "vitest": "^0.28.4",
+    "vitest-tsconfig-paths": "^3.4.1"
   }
 }
